@@ -25,7 +25,6 @@ services:
         name: "one-api"
         description: 'one-api api server'
         vpcConfig: auto
-        logConfig: auto
         nasConfig:
           userId: 0
           groupId: 0
