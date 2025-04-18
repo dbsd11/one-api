@@ -44,7 +44,7 @@ services:
         customContainerConfig: 
           image: "registry.cn-hangzhou.aliyuncs.com/dbsnolimit/linux_amd64_one-api:latest"
           command: '["sh"]'
-          args: '["-c", "ln -s /mnt/data /data && /one-api"]'
+          args: '["-c", "cd /mnt/data && /one-api"]'
         environmentVariables:
           TZ: Asia/Shanghai
         customHealthCheckConfig:
